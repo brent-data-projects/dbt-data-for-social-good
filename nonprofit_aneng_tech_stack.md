@@ -242,9 +242,10 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
   - Requires Power BI Pro or Premium for sharing dashboards
 
 </details><br>
-Best For: Organizations already using Microsoft producs.
 
-Reference:
+**Best For**: Organizations already using Microsoft producs.
+
+**Reference**:
 
 Power BI for Nonprofits: Microsoft offers 10 free Power BI Pro licenses via TechSoup or Microsoft for Nonprofits – [Get Started](https://nonprofit.microsoft.com/en-us/getting-started)
 
@@ -273,9 +274,10 @@ Power BI Pricing: https://powerbi.microsoft.com/pricing/
   - Weak version control and governance features
 
 </details><br>
-Best For: Google users, startups, nonprofits, or teams seeking a free and collaborative BI solution with minimal setup.
 
-Reference:
+**Best For**: Google users, startups, nonprofits, or teams seeking a free and collaborative BI solution with minimal setup.
+
+**Reference**:
 
 [Looker Studio (Free)](https://lookerstudio.google.com/overview)
 

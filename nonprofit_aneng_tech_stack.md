@@ -193,7 +193,7 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 
 ### Tableau
 
-**Description**: Industry-leading data visualization and business intelligence platform that enables self-service analytics through drag-and-drop interface. Offers powerful visualization capabilities, advanced analytics features, and strong data connectivity. Provides both desktop and cloud-based solutions.
+**Description**: Industry-leading data visualization and business intelligence platform that enables self-service analytics through drag-and-drop interface. Offers powerful visualization capabilities, advanced analytics features, and strong data connectivity. Provides both desktop and cloud-based solutions. Integrates well with Salesforce
 
 <details><summary>Expand to see Pros & Cons</summary>
 
@@ -215,11 +215,76 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 - Complex licensing model
 </details><br>
 
-**Best For**: Organizations with diverse visualization needs, non-technical end users, or those requiring advanced analytics capabilities.
+**Best For**: Organizations who are using Salesforce with diverse visualization needs, non-technical end users, or those requiring advanced analytics capabilities.
 
 **Reference**:
 - 2 year Desktop license via techsoup.org for Nonprofits for $74: https://www.techsoup.org/products/tableau-desktop-and-tableau-prep-builder-g-49474-
 - Tableau Accelerators for Nonprofits: https://exchange.tableau.com/accelerators?version=2021.2&category=Non-for-Profit
+
+
+### Power BI
+
+**Description**: A Microsoft-developed business intelligence platform that integrates seamlessly with Excel, Azure, and other Microsoft products. Power BI offers powerful data modeling, reporting, and visualization capabilities at a competitive price. Provides both cloud-based (Power BI Service) and desktop solutions (Power BI Desktop).
+
+<details><summary>Expand to see Pros & Cons</summary>
+
+**Pros**:
+  - Deep integration with Microsoft ecosystem (Excel, Teams, Azure, etc.)
+  - Affordable pricing, especially with Microsoft 365 bundles
+  - Strong data modeling capabilities with DAX and Power Query
+  - Large user community
+
+**Cons**:
+  - Steeper learning curve for advanced features (DAX, data modeling)
+  - Less intuitive interface compared to some competitors
+  - Limited custom visual flexibility without coding
+  - Can become costly for enterprise features (e.g., Premium capacity)
+  - Requires Power BI Pro or Premium for sharing dashboards
+
+</details><br>
+Best For: Organizations already using Microsoft producs.
+
+Reference:
+
+Power BI for Nonprofits: Microsoft offers 10 free Power BI Pro licenses via TechSoup or Microsoft for Nonprofits – [Get Started](https://nonprofit.microsoft.com/en-us/getting-started)
+
+Power BI Pricing: https://powerbi.microsoft.com/pricing/
+
+### Looker Studio (fka Google Data Studio)
+
+**Description**: A free, cloud-based business intelligence and data visualization tool from Google Cloud. Looker Studio enables users to create interactive dashboards and reports with data from various sources like BigQuery, Google Sheets, Google Ads, and more. While lightweight compared to enterprise BI tools, it’s powerful enough for many reporting needs, especially for teams already using Google Workspace or Google Cloud Platform. Requires Google Cloud setup which is separate to Google Workspace.
+
+<details><summary>Expand to see Pros & Cons</summary>
+
+**Pros**:
+  - Free to use with generous capabilities
+  - Generous free tier ($300 credits)
+  - Seamless integration with Google ecosystem (BigQuery, Sheets, Ads, Analytics, etc.)
+  - Easy sharing and real-time collaboration (like Google Docs)
+  - No coding required for most tasks; simple drag-and-drop UI
+  - Custom connectors and community-developed data sources
+  - Fast to prototype and deploy live dashboards
+
+**Cons**:
+  - Requires Google Cloud account
+  - Lacks robust data modeling and transformation tools (no built-in ETL)
+  - Performance can lag with large datasets or complex filters
+  - Limited visual customization compared to Tableau or Power BI
+  - Weak version control and governance features
+
+</details><br>
+Best For: Google users, startups, nonprofits, or teams seeking a free and collaborative BI solution with minimal setup.
+
+Reference:
+
+[Looker Studio (Free)](https://lookerstudio.google.com/overview)
+
+[Gallery of Free Templates & Connectors](https://lookerstudio.google.com/gallery)
+
+[Nonprofits on Google](https://www.google.com/nonprofits/)
+
+[Google Cloud Free Tier](https://cloud.google.com/free?hl=en)
+
 
 ---
 

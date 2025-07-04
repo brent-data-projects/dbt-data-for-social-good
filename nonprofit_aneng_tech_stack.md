@@ -247,9 +247,9 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 
 **Reference**:
 
-Power BI for Nonprofits: Microsoft offers 10 free Power BI Pro licenses via TechSoup or Microsoft for Nonprofits – [Get Started](https://nonprofit.microsoft.com/en-us/getting-started)
+- Power BI for Nonprofits: Microsoft offers 10 free Power BI Pro licenses via TechSoup or Microsoft for Nonprofits – [Get Started](https://nonprofit.microsoft.com/en-us/getting-started)
 
-Power BI Pricing: https://powerbi.microsoft.com/pricing/
+- Power BI Pricing: https://powerbi.microsoft.com/pricing/
 
 ### Looker Studio (fka Google Data Studio)
 
@@ -279,13 +279,13 @@ Power BI Pricing: https://powerbi.microsoft.com/pricing/
 
 **Reference**:
 
-[Looker Studio (Free)](https://lookerstudio.google.com/overview)
+- [Looker Studio (Free)](https://lookerstudio.google.com/overview)
 
-[Gallery of Free Templates & Connectors](https://lookerstudio.google.com/gallery)
+- [Gallery of Free Templates & Connectors](https://lookerstudio.google.com/gallery)
 
-[Nonprofits on Google](https://www.google.com/nonprofits/)
+- [Nonprofits on Google](https://www.google.com/nonprofits/)
 
-[Google Cloud Free Tier](https://cloud.google.com/free?hl=en)
+- [Google Cloud Free Tier](https://cloud.google.com/free?hl=en)
 
 
 ---

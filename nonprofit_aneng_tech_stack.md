@@ -2,9 +2,9 @@
 
 Purpose of this doc is to lay out the shortlist of tools to pick from, so it's easier to help nonprofits make analytics/data/AI tooling decisions.  Obviously if they're already entrenched in a stack, work around that - but this page is designed more for greenfield
 
-## Source Systems & Version Control
+## Version Control
 
-### Version Control: GitHub
+### Option 1: GitHub
 
 **Description**: Industry-standard Git-based version control platform that enables collaborative development, automated workflows via Actions, and comprehensive project management. For nonprofits, GitHub provides the foundation for managing code, documentation, and automating data pipelines while maintaining transparency and audit trails.
 
@@ -14,6 +14,10 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 - GitHub for Nonprofits ([link](https://github.com/solutions/industry/nonprofits)):
   - Free GitHub Team plan
   - 25% off GitHub Enterprise Cloud plan
+
+## CRM
+
+Typically, "CRM" means "Customer Relationship Management", but for nonprofits this could be donor & volunteer management
 
 ### CRM Option 1 (scrappy): Airtable
 
@@ -42,7 +46,40 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 - Airtable for Nonprofits: ([link](https://support.airtable.com/docs/nonprofit-and-educational-plans-faqs))
   - For 501(c)(3)'s, and doesn't apply to religious organizations or healthcare
 
-### CRM Option 2: Salesforce
+### CRM Option 2 (free, turnkey): GiveButter
+
+**Description**: All-in-one fundraising platform that combines donation processing, fundraising tools, and CRM functionality in a free, modern interface. GiveButter is ranked as the #1 software for fundraising, donor management, nonprofit CRM, and auctions on G2, offering donation forms that convert 47% of potential donors—4x the industry average. The platform provides unlimited contacts, donor tracking, automated workflows, and integrated fundraising tools without requiring technical expertise.
+
+<details><summary>Expand to see Pros & Cons</summary>
+
+**Pros**:
+
+- Core fundraising, marketing, and CRM features are completely free with unlimited contacts
+- Multiple payment options including Venmo, Apple Pay, Google Pay, PayPal, ACH, debit/credit cards, and donor-advised funds
+- Built-in peer-to-peer fundraising, events, auctions, and recurring donation capabilities
+- 24/7 customer support with highest satisfaction ratings in industry
+- Integrates with over 1,000 tools through native integrations and Zapier
+- Mobile app for event check-ins and live display features
+- No setup fees or monthly costs for core functionality
+
+**Cons**:
+
+- Revenue model relies on optional donor tips (defaults to 15% according to competitors) or platform fees
+- When tips are disabled, platform fees apply: 1% for donation forms, 3% for fundraising pages, 5% for events/auctions
+- Payment processing fees of 2.9% + 30¢ for cards, 1.9% + 30¢ for ACH
+- Advanced features like automation and advanced analytics require Givebutter Plus subscription
+- Less customizable than enterprise CRM solutions
+- May face "donor tip fatigue" concerns from some supporters
+
+</details><br>
+
+**Best For**: Nonprofits seeking a modern, all-in-one solution that combines fundraising and CRM without upfront costs, especially those comfortable with tip-based or fee-based revenue models.
+
+**Reference**:
+- Givebutter main platform ([link](https://givebutter.com/))
+- Transparent pricing information ([link](https://givebutter.com/pricing))
+
+### CRM Option 3: Salesforce
 
 **Description**: Enterprise-grade CRM platform with specialized Nonprofit Cloud designed for complex fundraising, program management, and donor stewardship. Offers advanced automation, comprehensive reporting, and extensive third-party integrations. The platform provides purpose-built objects for nonprofits like donations, grants, and volunteer management.
 
@@ -58,7 +95,7 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 
 **Cons**:
 
-- Steep learning curve requiring dedicated admin resources
+- Steep learning curve requiring dedicated IT/admin resources
 - Can be complex to implement and maintain
 - Limited customization on free Power of Us licenses
 - May be overkill for smaller organizations
@@ -248,7 +285,6 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 **Reference**:
 
 - Power BI for Nonprofits: Microsoft offers 10 free Power BI Pro licenses via TechSoup or Microsoft for Nonprofits – [Get Started](https://nonprofit.microsoft.com/en-us/getting-started)
-
 - Power BI Pricing: https://powerbi.microsoft.com/pricing/
 
 ### Looker Studio (fka Google Data Studio)
@@ -280,61 +316,6 @@ Purpose of this doc is to lay out the shortlist of tools to pick from, so it's e
 **Reference**:
 
 - [Looker Studio (Free)](https://lookerstudio.google.com/overview)
-
 - [Gallery of Free Templates & Connectors](https://lookerstudio.google.com/gallery)
-
 - [Nonprofits on Google](https://www.google.com/nonprofits/)
-
 - [Google Cloud Free Tier](https://cloud.google.com/free?hl=en)
-
-
----
-
-## Recommended Architecture Patterns
-
-Starter Stack (Budget <$10K/year)
-
-- **CRM**: Airtable
-- **Data Warehouse**: BigQuery (free tier)
-- **Transformation**: dbt Core (free)
-- **Visualization**: Tableau Desktop via TechSoup
-- **Version Control**: GitHub (free nonprofit plan)
-
-Growth Stack (Budget $10K-50K/year)
-
-- **CRM**: Salesforce Nonprofit Cloud
-- **Data Integration**: Airbyte Cloud
-- **Data Warehouse**: Snowflake or BigQuery
-- **Transformation**: dbt Cloud
-- **Visualization**: Tableau Cloud or Power BI
-- **Version Control**: GitHub Team
-
-Enterprise Stack (Budget >$50K/year)
-
-- **CRM**: Salesforce Nonprofit Cloud with advanced features
-- **Data Integration**: Airbyte Cloud + custom connectors
-- **Data Warehouse**: Snowflake with multiple environments
-- **Transformation**: dbt Cloud with advanced features
-- **Visualization**: Tableau Cloud + embedded analytics
-- **Version Control**: GitHub Enterprise
-- **Data Governance**: Additional tools for cataloging and lineage
-
-## Implementation Considerations
-
-Technical Expertise Required
-
-- **Low**: Airtable + Tableau Desktop (basic)
-- **Medium**: Full modern data stack with dbt
-- **High**: Custom integrations and advanced analytics
-
-Data Volume Considerations
-
-- **<1GB**: Airtable + BigQuery free tier
-- **1GB-1TB**: Snowflake or BigQuery with proper optimization
-- **\>1TB**: Enterprise-grade solutions with dedicated optimization
-
-Compliance Requirements
-
-- **Basic**: Standard cloud security features
-- **HIPAA/SOX**: Enterprise platforms with additional security controls
-- **International**: Consider data residency requirements
